@@ -24,8 +24,11 @@ export const metadata: Metadata = {
   title: "Yogesh · Software Engineer",
   description:
     "Portfolio of Yogesh, a full-stack software engineer focused on Laravel, Node.js, and ERP/workflow systems.",
+  manifest: "/manifest.webmanifest",
   icons: {
     icon: "/image.svg",
+    shortcut: "/image.svg",
+    apple: "/image.svg",
   },
 };
 
