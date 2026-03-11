@@ -1,72 +1,161 @@
-<h1 align="center">Hi 👋, I'm Yogesh</h1>
-<h3 align="center">
-  Backend-focused developer building scalable APIs, distributed systems, and AI-enhanced services using Laravel, FastAPI, Docker, and modern DevTools.
-</h3>
-
----
-
-- 🔐 Built [**Authify**](https://github.com/yogesh-xcode/Authify) — a stateless authentication system using **FastAPI**, **JWT**, **Tortoise ORM**, and **Docker** for clean modular auth.
-
-- ✅ Completed [**MediVault**](https://github.com/yogesh-xcode) — a full-stack medical record backend combining **Laravel + FastAPI**:
-
-  #### 🧩 How it works:
-  - 🔐 **Admin Auth (Laravel):** Admins register or log in to manage patient data.
-  - 🧍 **Patient & Report Management:** Add patients and upload reports (PDF/images), stored securely via **Laravel Filesystem**.
-  - 📤 **OCR Microservice (FastAPI):** Reports are sent to a **FastAPI** service using **Tesseract** for OCR.
-  - 🧠 **AI Structuring (Gemini API):** Extracted text is passed to **Gemini**, returned as structured JSON.
-  - 🗃️ **Data Storage:** JSON is stored in **MongoDB**; files remain in object-like storage.
-  - 🔍 **Frontend-Ready APIs:** Reports can be fetched by report type via Laravel endpoints.
-
-  #### 🔧 Tech Stack:
-
-  Laravel, FastAPI, Tesseract, Gemini API, MongoDB, Filesystem, Docker, Scribe
-
-- 🌱 Currently learning advanced **Laravel architecture** and designing **multi-service systems** powered by **FastAPI + AI modules**.
-
-- 🤝 Looking to collaborate on:
-  - Backend-heavy systems
-  - AI-enhanced dev tools
-  - Laravel microservice integrations
-
-- 💼 Open to backend developer roles — especially in **SaaS**, **AI**, or **DevTool** teams.
-
-- 💬 Ask me about:  
-  **FastAPI**, **Laravel**, **Docker**, **Next.js**, **Hono.js**, **PostgreSQL**, and real-world API architecture.
-
-- ⚡ Fun fact:  
-  _"I don’t wait to be told what to build — I explore, prototype, and ship."_
-
----
-
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://www.linkedin.com/in/yogesh-xcode" target="blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="linkedin" height="30" width="40" />
-  </a>
-  
-  <a href="https://instagram.com/yogesh.self" target="blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="instagram" height="30" width="40" />
-  </a>
-</p>
-
----
-
-<h3 align="left">Languages and Tools:</h3>
-<p align="left">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="TypeScript" width="40" height="40"/>
-    <img src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="Next.js" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" width="40" height="40"/>
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="Python" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-line-wordmark.svg" alt="Laravel" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="Docker" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="PostgreSQL" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg" alt="Redis" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="MongoDB" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="Linux" width="40" height="40"/>
-</p>
-
----
-
+<h1 align="center">Yogesh Portfolio v2</h1>
+<p align="center">A production-ready Next.js portfolio with integrated contact workflows (Resend + Twilio WhatsApp).</p>
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=yogesh-xcode&show_icons=true&locale=en&layout=compact" alt="Top Languages" />
+  <img src="https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=next.js" />
+  <img src="https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react" />
+  <img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript" />
+  <img src="https://img.shields.io/badge/Contact-Resend-000000?style=flat-square" />
+  <img src="https://img.shields.io/badge/Alerts-Twilio%20WhatsApp-red?style=flat-square" />
 </p>
+
+---
+
+## Table of Contents
+
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Tech Stack](#tech-stack)
+4. [Getting Started](#getting-started)
+5. [Project Structure](#project-structure)
+6. [Configuration](#configuration)
+7. [Contact API Behavior](#contact-api-behavior)
+8. [Scripts](#scripts)
+9. [Deployment Notes](#deployment-notes)
+
+---
+
+## Introduction
+
+This repository contains the second version of `yogeshbuilds.in`, built with the Next.js App Router. It includes a fully designed single-page portfolio, interactive UI behavior, and a backend contact endpoint that sends email and WhatsApp notifications.
+
+---
+
+## Features
+
+- Portfolio sections for hero, services, projects, about, and contact
+- Custom cursor and reveal animations on the frontend
+- Contact form submission to `POST /api/contact`
+- Email notifications using Resend:
+  - Owner notification
+  - Visitor auto-reply
+- WhatsApp notification using Twilio
+- Graceful partial-failure handling across delivery channels
+- Form validation for required fields and email format
+
+---
+
+## Tech Stack
+
+| Tool | Purpose |
+| --- | --- |
+| [Next.js](https://nextjs.org) | App framework (App Router) |
+| [React](https://react.dev) | UI rendering |
+| [TypeScript](https://www.typescriptlang.org) | Type safety |
+| [Resend](https://resend.com) | Contact email delivery |
+| [Twilio](https://www.twilio.com) | WhatsApp notifications |
+| [ESLint](https://eslint.org) | Linting |
+
+---
+
+## Getting Started
+
+### 1. Install dependencies
+
+```bash
+pnpm install
+```
+
+### 2. Configure environment variables
+
+Create `.env.local` and set values:
+
+```env
+RESEND_API_KEY=
+TWILIO_ACCOUNT_SID=
+TWILIO_AUTH_TOKEN=
+TWILIO_WHATSAPP_FROM=whatsapp:+14155238886
+WHATSAPP_NUMBER=+917448624928
+```
+
+### 3. Run development server
+
+```bash
+pnpm dev
+```
+
+Open `http://localhost:3000`.
+
+---
+
+## Project Structure
+
+```text
+.
+├── src/
+│   └── app/
+│       ├── api/
+│       │   └── contact/
+│       │       └── route.ts
+│       ├── globals.css
+│       ├── layout.tsx
+│       └── page.tsx
+├── public/
+├── trash/
+│   └── portfolio.html
+├── .env.example
+├── changelog.md
+└── README.md
+```
+
+---
+
+## Configuration
+
+Use `.env.example` as a template and keep real credentials in `.env.local`.
+
+Service requirements:
+- Resend domain should be verified for your sender address.
+- Twilio WhatsApp sender must be enabled in your Twilio account.
+
+---
+
+## Contact API Behavior
+
+Endpoint: `POST /api/contact`
+
+Expected payload:
+
+```json
+{
+  "name": "Visitor Name",
+  "email": "visitor@example.com",
+  "message": "Hello, I'd like to work with you.",
+  "projectType": "Optional"
+}
+```
+
+On submit, the API attempts:
+- Resend owner notification email
+- Resend visitor auto-reply email
+- Twilio WhatsApp notification
+
+If all channels fail, it returns an error. If at least one succeeds, it returns success with a `partial` flag when needed.
+
+---
+
+## Scripts
+
+```bash
+pnpm dev      # start local dev server
+pnpm lint     # run ESLint
+pnpm build    # production build
+pnpm start    # run production server
+```
+
+---
+
+## Deployment Notes
+
+- Set all required environment variables in your hosting platform.
+- Keep secrets out of git.
+- Verify DNS and sender setup for Resend and Twilio before going live.
