@@ -24,6 +24,9 @@ export const metadata: Metadata = {
   title: "Yogesh · Software Engineer",
   description:
     "Portfolio of Yogesh, a full-stack software engineer focused on Laravel, Node.js, and ERP/workflow systems.",
+  icons: {
+    icon: "/image.svg",
+  },
 };
 
 export default function RootLayout({
