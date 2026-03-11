@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Mono, Outfit, Playfair_Display } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const playfairDisplay = Playfair_Display({
@@ -100,6 +101,7 @@ export default function RootLayout({
         className={`${playfairDisplay.variable} ${outfit.variable} ${dmMono.variable} antialiased`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
