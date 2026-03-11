@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1 align="center">Hi 👋, I'm Yogesh</h1>
+<h3 align="center">
+  Backend-focused developer building scalable APIs, distributed systems, and AI-enhanced services using Laravel, FastAPI, Docker, and modern DevTools.
+</h3>
 
-## Getting Started
+---
 
-First, run the development server:
+- 🔐 Built [**Authify**](https://github.com/yogesh-xcode/Authify) — a stateless authentication system using **FastAPI**, **JWT**, **Tortoise ORM**, and **Docker** for clean modular auth.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- ✅ Completed [**MediVault**](https://github.com/yogesh-xcode) — a full-stack medical record backend combining **Laravel + FastAPI**:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+  #### 🧩 How it works:
+  - 🔐 **Admin Auth (Laravel):** Admins register or log in to manage patient data.
+  - 🧍 **Patient & Report Management:** Add patients and upload reports (PDF/images), stored securely via **Laravel Filesystem**.
+  - 📤 **OCR Microservice (FastAPI):** Reports are sent to a **FastAPI** service using **Tesseract** for OCR.
+  - 🧠 **AI Structuring (Gemini API):** Extracted text is passed to **Gemini**, returned as structured JSON.
+  - 🗃️ **Data Storage:** JSON is stored in **MongoDB**; files remain in object-like storage.
+  - 🔍 **Frontend-Ready APIs:** Reports can be fetched by report type via Laravel endpoints.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+  #### 🔧 Tech Stack:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+  Laravel, FastAPI, Tesseract, Gemini API, MongoDB, Filesystem, Docker, Scribe
 
-## Learn More
+- 🌱 Currently learning advanced **Laravel architecture** and designing **multi-service systems** powered by **FastAPI + AI modules**.
 
-To learn more about Next.js, take a look at the following resources:
+- 🤝 Looking to collaborate on:
+  - Backend-heavy systems
+  - AI-enhanced dev tools
+  - Laravel microservice integrations
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 💼 Open to backend developer roles — especially in **SaaS**, **AI**, or **DevTool** teams.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- 💬 Ask me about:  
+  **FastAPI**, **Laravel**, **Docker**, **Next.js**, **Hono.js**, **PostgreSQL**, and real-world API architecture.
 
-## Deploy on Vercel
+- ⚡ Fun fact:  
+  _"I don’t wait to be told what to build — I explore, prototype, and ship."_
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+<a href="https://www.linkedin.com/in/yogesh-xcode" target="blank">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="linkedin" height="30" width="40" />
+  </a>
+  
+  <a href="https://instagram.com/yogesh.self" target="blank">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="instagram" height="30" width="40" />
+  </a>
+</p>
+
+---
+
+<h3 align="left">Languages and Tools:</h3>
+<p align="left">
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="TypeScript" width="40" height="40"/>
+    <img src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="Next.js" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" width="40" height="40"/>
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="Python" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-line-wordmark.svg" alt="Laravel" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="Docker" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="PostgreSQL" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg" alt="Redis" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="MongoDB" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="Linux" width="40" height="40"/>
+</p>
+
+---
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=yogesh-xcode&show_icons=true&locale=en&layout=compact" alt="Top Languages" />
+</p>
