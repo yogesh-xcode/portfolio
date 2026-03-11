@@ -148,8 +148,54 @@ export default function Home() {
     };
   }, []);
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        name: "Yogesh",
+        url: "https://yogeshbuilds.in",
+        image: "https://yogeshbuilds.in/image.svg",
+        jobTitle: "Software Engineer",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Chennai",
+          addressRegion: "Tamil Nadu",
+          addressCountry: "IN",
+        },
+        sameAs: ["https://linkedin.com/in/yogesh-xcode"],
+      },
+      {
+        "@type": "WebSite",
+        name: "Yogesh Builds",
+        url: "https://yogeshbuilds.in",
+        inLanguage: "en-IN",
+      },
+      {
+        "@type": "ProfessionalService",
+        name: "Yogesh Builds",
+        url: "https://yogeshbuilds.in",
+        image: "https://yogeshbuilds.in/image.svg",
+        areaServed: "IN",
+        founder: {
+          "@type": "Person",
+          name: "Yogesh",
+        },
+        serviceType: [
+          "Full-stack development",
+          "Backend and API development",
+          "ERP and workflow system development",
+        ],
+      },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       <div className="cursor" id="cursor" />
       <div className="cursor-ring" id="cursorRing" />
 
